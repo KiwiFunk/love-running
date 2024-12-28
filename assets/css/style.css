@@ -193,10 +193,6 @@ main {
     line-height: 1em;       /* Reset Line Height for any alt text */
 }
 
-
-
-
-
 /* Footer */
 #social-media {
     text-align: center;
@@ -212,7 +208,17 @@ main {
     color: #3a3a3a;
 }
 
-/* Media Query: Tablets and Larger (768px) */
+/* Media Query: Large or Landscape phones (>576px) */
+@media screen and (min-width: 576px) {
+    /* Masonry design style */
+
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+/* Media Query: Tablets and Larger (>768px) */
 @media screen and (min-width: 768px) {
     /* Header */
     nav {
@@ -270,11 +276,22 @@ main {
     #benefits-image {
         margin-top: 15px;
     }
+
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
+
 }
 /* Media Query: Laptops and Larger (992px) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
     }
 }
 
@@ -306,6 +323,4 @@ main {
     #benefits-image {
         margin-top: 0px;
     }
-    
 }
-
