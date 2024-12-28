@@ -228,7 +228,7 @@ main {
 #signup {
     background: url(../images/signup-image.webp) no-repeat center center/cover;
     background-position: 75%;
-    padding: 20px 20% 0 10%;
+    padding: 20px 20% 0 20%;
     flex-grow: 1;
 }
 
