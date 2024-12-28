@@ -79,11 +79,17 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
-
+/* Main content */
 main {
-    background-color: lightblue;
     flex: 1 0 auto;                             /*Fill page with main content. flex-grow, flex-shrink, flex-basis*/
     margin-top: 47px;       
+}
+
+/* Hero Section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background-color: aquamarine;
 }
 
 /* Footer */
@@ -134,7 +140,7 @@ main {
         margin-top: 79px;
     }
 }
-
+/* Media Query: Laptops and Larger (992px) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
